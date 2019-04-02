@@ -6,7 +6,7 @@
 
 int main()
 {
-	int dado[10], matrizG[7][4], i, j, matrizH[3][7];
+	int dado[4], codificado[7], matrizG[7][4], i, j, matrizH[3][7];
 	FILE *fp, *fp2;
 
 	fp = fopen("matrizG", "r");
