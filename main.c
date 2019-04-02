@@ -57,9 +57,9 @@ int main()
     }
 
 	
-	for (i = 0; i < 7; ++i) {
-		printf("%d ", codificado[i]);
-	}
+    for (i = 0; i < 7; ++i) {
+    	printf("%d ", codificado[i]);
+    }
 
-	return 0;
+    return 0;
 }
