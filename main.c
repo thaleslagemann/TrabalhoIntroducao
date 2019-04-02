@@ -7,10 +7,13 @@
 int main()
 {
 	int dado[10], matrizG[7][4], i, j;
-	
-	for (i = 0; i < 7) {
-		for (j = 0; j < 4) {
-			fscanf(fp, "%d", matriz[i][j]);
+	FILE *fp;
+
+	fp = fopen("matrizG", "r");
+
+	for (i = 0; i < 7; i++) {
+		for (j = 0; j < 4; j++) {
+			fscanf(fp, "%d", &matrizG[i][j]);
 		}
 	}
 	
