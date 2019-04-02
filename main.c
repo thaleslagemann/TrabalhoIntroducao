@@ -7,7 +7,6 @@
 int main()
 {
 	int dado[10];
-	printf("Hello World");
 	
 	printf (" Entre com 4 bits um de cada vez: \n");
 	scanf("%d",&dado[0]);
