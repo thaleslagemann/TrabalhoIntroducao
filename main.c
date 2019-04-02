@@ -39,6 +39,9 @@ int main()
 	}
 
 	for (i = 0; i < 4; i++) {
+		if (i == 2) {
+			continue;
+		}
 		if (codificado[i] % 2 == 0) {
 			codificado[i] = 0;
 		} else {
