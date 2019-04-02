@@ -37,6 +37,25 @@ int main()
 		codificado[i] = matrizG[i][0]*dado[0]+matrizG[i][1]*dado[1]+matrizG[i][2]*dado[2]+matrizG[i][3]*dado[3];
 		printf("\n");
 	}
+
+	if(codificado[0] %2 == 0) {
+    	codificado[0] = 0;
+    } else {
+    	codificado[0] = 1;
+    }
+
+    if (codificado[1] %2 == 0) {
+	    codificado[1] = 0;
+    } else {
+    	codificado[1] = 1;
+    }
+
+    if(codificado[3] %2 == 0) {
+	    codificado[3] = 0;
+    } else {
+        codificado[3] = 1;
+    }
+
 	
 	for (i = 0; i < 7; ++i) {
 		printf("%d ", codificado[i]);
