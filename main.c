@@ -38,28 +38,17 @@ int main()
 		printf("\n");
 	}
 
-	if(codificado[0] %2 == 0) {
-    	codificado[0] = 0;
-    } else {
-    	codificado[0] = 1;
-    }
+	for (i = 0; i < 4; i++) {
+		if (codificado[i] % 2 == 0) {
+			codificado[i] = 0;
+		} else {
+			codificado[i] = 1;
+		}
+	}
 
-    if (codificado[1] %2 == 0) {
-	    codificado[1] = 0;
-    } else {
-    	codificado[1] = 1;
-    }
+	for (i = 0; i < 7; ++i) {
+		printf("%d ", codificado[i]);
+	}
 
-    if(codificado[3] %2 == 0) {
-	    codificado[3] = 0;
-    } else {
-        codificado[3] = 1;
-    }
-
-	
-    for (i = 0; i < 7; ++i) {
-    	printf("%d ", codificado[i]);
-    }
-
-    return 0;
+	return 0;
 }
