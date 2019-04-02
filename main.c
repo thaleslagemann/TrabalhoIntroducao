@@ -29,11 +29,18 @@ int main()
 	}
 	
 	printf (" Entre com 4 bits um de cada vez: \n");
-	scanf("%d",&dado[0]);
-	scanf("%d",&dado[1]);
-	scanf("%d",&dado[2]);
-	scanf("%d",&dado[3]);
+	for (i = 0; i < 4; ++i) {
+		scanf("%d", &dado[i]);
+	}
+
+	for (i = 0; i < 7; i++) {
+		codificado[i] = matrizG[i][0]*dado[0]+matrizG[i][1]*dado[1]+matrizG[i][2]*dado[2]+matrizG[i][3]*dado[3];
+		printf("\n");
+	}
 	
-	
+	for (i = 0; i < 7; ++i) {
+		printf("%d ", codificado[i]);
+	}
+
 	return 0;
 }
